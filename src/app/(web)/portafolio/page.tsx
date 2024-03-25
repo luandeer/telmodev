@@ -1,13 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-export function formatDate(input: string | number): string {
-    const date = new Date(input)
-    return date.toLocaleDateString("en-US", {
-      month: "long",
-      day: "numeric",
-      year: "numeric",
-    })
-  }
+
 
 export default function Portafolio() {
 
@@ -114,7 +107,7 @@ export default function Portafolio() {
             )}
             {post.date && (
               <p className="text-sm text-muted-foreground">
-                {formatDate(post.date)}
+                {post.date}
               </p>
             )}
             <Link href={post.slug} className="absolute inset-0">
