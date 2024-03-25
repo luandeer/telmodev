@@ -4,9 +4,9 @@ import { FaGithub,FaLinkedin,FaYoutube,FaInstagram } from "react-icons/fa";
 
 export const siteConfig = {
   nameLogo: "TELMO",
-  nameMetada: "Sonqu",
+  nameMetada: "Telmo",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "Este es mi portafolio como desarrollador web",
   mainNav: [
     {
       title: "Inicio",

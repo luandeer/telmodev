@@ -1,36 +1,26 @@
-"use client";
-
-import * as React from "react";
-import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
+"use client"
 import { cn } from "@/lib/utils";
-import { useIsMounted } from "@/hook/is-mounted";
+import * as React from "react"
+import { Moon, Sun } from "lucide-react"
+import { useTheme } from "next-themes"
 
-type Props = {
-    readonly className?: string;
-};
+import { Button } from "@/components/ui/button"
 
-export function ThemeToggle({ className }: Props) {
-    const isMounted = useIsMounted();
-    const { systemTheme, theme, setTheme } = useTheme();
-
-    const currentTheme = theme === "system" ? systemTheme : theme;
-
-    function toggleTheme() {
-        setTheme(currentTheme === "light" ? "dark" : "light");
-    }
+export function ThemeToggle() {
+    const { setTheme, theme } = useTheme()
 
     return (
-        <button
-            onClick={toggleTheme}
+        <Button
+            size="icon"
             className={cn(
-                "flex h-7 w-7 items-center justify-center rounded-full border border-border p-1 transition-transform duration-300 dark:text-green-300",
-                isMounted() && (currentTheme === "light" ? "-rotate-180" : "rotate-0"),
-                className,
+                "flex h-7 w-7 items-center justify-center rounded-full border border-border p-1 transition-transform duration-300 dark:text-green-600",
+                theme === "light" ? "-rotate-180" : "rotate-0",
             )}
+            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         >
-            {isMounted() &&
-                (currentTheme === "light" ? <Sun /> : <Moon />)}
-        </button>
-    );
+            <Sun className=" dark:hidden" />
+            <Moon className="hidden  dark:block" />
+            <span className="sr-only">Toggle theme</span>
+        </Button>
+    )
 }

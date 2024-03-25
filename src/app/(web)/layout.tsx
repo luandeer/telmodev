@@ -1,6 +1,7 @@
 import { Footer, SiteHeader } from "@/components";
 import ProviderBarra from "@/context/ProviderBarra";
 import { Toaster } from "@/components/ui/sonner"
+import ScrollToTop from "@/components/comun/ScrollToTop";
 
 //lrc para crear layout (comando atajo)
 export default function WebLayout({
@@ -16,6 +17,7 @@ export default function WebLayout({
           <ProviderBarra>{children}</ProviderBarra>
           
         </div>
+        <ScrollToTop/>
         <Footer/>
       </div>
       <Toaster richColors/>

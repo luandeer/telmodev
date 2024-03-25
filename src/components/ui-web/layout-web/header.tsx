@@ -28,7 +28,7 @@ export function SiteHeader() {
                                 rel="noreferrer"
                             >
                                 <div>
-                                    <RiWhatsappFill size={20} className="text-green-500" />
+                                    <RiWhatsappFill size={25} className="text-green-500" />
                                     <span className="sr-only">GitHub</span>
                                 </div>
                             </Link>
