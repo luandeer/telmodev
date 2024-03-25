@@ -10,7 +10,7 @@ export default function ProviderBarra({
         <div>
             <ProgressBar
                 height="2.5px"
-                color="#C5E898"
+                color="#B31312"
                 options={{ showSpinner: false }}
                 shallowRouting
             />
