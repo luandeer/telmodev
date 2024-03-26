@@ -1,13 +1,21 @@
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { FacebookIcon, InstagramIcon, TwitterIcon } from "lucide-react"
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import Breadcrumb from "@/components/comun/Breadcrumb";
 
 export default function NamePage() {
   return (
-    <div className="container grid w-full gap-6 px-4 md:px-6 pb-12 space-y-4">
+    <div className="container grid w-full gap-2 px-5 pb-12 sm:px-0">
+      <div className=" duration-700 animate-in slide-in-from-top-full sm:px-0">
+        <Breadcrumb
+          pageName="Contacto"
+          pathActual="https://res.cloudinary.com/dsf39ftzm/image/upload/v1711330351/portafolio/axbrs2nixcaa1b5kyyrf.png"
+          description="Encuentrame por estos medios."
+        />
+      </div>
 
       <div className="space-y-4">
         <div>
@@ -18,33 +26,34 @@ export default function NamePage() {
         </div>
         <div className="grid grid-cols-3 gap-4">
           <a
-            className="group flex flex-col items-center p-4 border rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="group flex flex-col gap-2 items-center rounded-lg border p-4 hover:bg-gray-100 dark:hover:bg-gray-800"
             href="#"
           >
-            <FacebookIcon className="h-6 w-6" />
+            <FaFacebook className="h-6 w-6" />
             <span className="text-sm font-medium">Facebook</span>
           </a>
           <a
-            className="group flex flex-col items-center p-4 border rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="group flex flex-col gap-2 items-center rounded-lg border p-4 hover:bg-gray-100 dark:hover:bg-gray-800"
             href="#"
           >
-            <TwitterIcon className="h-6 w-6" />
-            <span className="text-sm font-medium">Twitter</span>
+            <FaLinkedin className="h-6 w-6" />
+            <span className="text-sm font-medium">Linkedin</span>
           </a>
           <a
-            className="group flex flex-col items-center p-4 border rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="group flex flex-col gap-2 items-center rounded-lg border p-4 hover:bg-gray-100 dark:hover:bg-gray-800"
             href="#"
           >
-            <InstagramIcon className="h-6 w-6" />
-            <span className="text-sm font-medium">Instagram</span>
+            <FaGithub className="h-6 w-6" />
+            <span className="text-sm font-medium">GitHub</span>
           </a>
         </div>
       </div>
-      <div className="space-y-4">
+      <div className="space-y-4 pt-5">
         <div>
           <h1 className="text-2xl font-bold">Informacion de contacto</h1>
           <p className="text-gray-500 dark:text-gray-400">
-            Aqui puedes encontrar mas detalles importantes para contactarte conmigo.
+            Aqui puedes encontrar mas detalles importantes para contactarte
+            conmigo.
           </p>
         </div>
         <div className="space-y-2">
@@ -68,8 +77,8 @@ export default function NamePage() {
           </dl>
         </div>
       </div>
-      <div>
-        <h1 className="text-2xl font-bold mb-2">Enviame un email:</h1>
+      <div className="hidden">
+        <h1 className="mb-2 text-2xl font-bold">Enviame un email:</h1>
         <div className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
@@ -87,11 +96,14 @@ export default function NamePage() {
           </div>
           <div className="space-y-2">
             <Label htmlFor="message">Message</Label>
-            <Textarea className="min-h-[100px]" id="message" placeholder="Enter your message" />
+            <Textarea
+              className="min-h-[100px]"
+              id="message"
+              placeholder="Enter your message"
+            />
           </div>
           <Button>Send message</Button>
         </div>
-
       </div>
     </div>
   );

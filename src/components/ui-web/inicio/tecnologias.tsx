@@ -25,7 +25,7 @@ export function Skills() {
     return (
         <Carousel
             plugins={[plugin2.current]}
-            className="w-full"
+            className="w-full px-5 sm:px-0"
             opts={{
                 align: "start",
                 loop: true,

@@ -9,7 +9,7 @@ export const DescargarCv = () => {
         <Link
             href="/cv.pdf"
             download
-            className="flex max-w-fit items-center justify-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-3 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+            className="flex max-w-fit items-center justify-center gap-1 rounded-lg border border-gray-300 bg-white px-6 py-3 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
             target="_blank"
             onClick={() =>
                 toast.success('Se descargó exitosamente')

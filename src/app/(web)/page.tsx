@@ -15,9 +15,9 @@ import { DescargarCv } from "@/components/ui-web/inicio/descargar-cv";
 export default function Home() {
   return (
     <>
-      <div className="grid grid-cols-2 items-center justify-center gap-2 max-sm:flex max-sm:flex-col-reverse max-sm:items-center max-sm:gap-3">
+      <div className="grid grid-cols-2 items-center justify-center gap-2 max-sm:flex max-sm:flex-col-reverse max-sm:items-center max-sm:gap-3 max-sm:my-20">
         <div className="flex flex-col items-start justify-start px-5 text-gray-700 xl:px-0 duration-700 animate-in slide-in-from-top-full">
-          <div>
+          <div className="hidden">
             <Badge className="mx-auto mb-5 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-gray-700 px-5 py-1 transition-colors">
               {" "}
               <GrProjects className="text-white" size={12} />
@@ -30,12 +30,12 @@ export default function Home() {
           <h1 className=" text-start text-4xl font-bold tracking-[-0.02em] drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]">
             <span className="flex items-center justify-start gap-1 md:text-4xl">
               Hola
-              <PiHandWavingFill className="text-yellow-500" />,
+              <PiHandWavingFill className="text-yellow-500" />
             </span>{" "}
-            Soy Telmo Perez.
+            Soy Telmo Perez,
           </h1>
           <p className=" mt-6 text-start text-gray-500 md:text-md">
-            Jr Frontend Developer | Software Engineer Student at UNMSM
+            Jr Frontend Developer | Software Engineer Student at UNMSM.
           </p>
 
           <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-4 duration-700 animate-in slide-in-from-bottom-full">
@@ -61,7 +61,7 @@ export default function Home() {
           <div className=" mt-6 flex items-center justify-start space-x-2 sm:space-x-3">
             <Link
               href="/contacto"
-              className="flex  items-center justify-center gap-1 rounded-full border border-gray-200 bg-black px-6 py-3 text-sm text-white transition-colors"
+              className="flex  items-center justify-center gap-1 rounded-lg border border-gray-200 bg-black px-6 py-3 text-sm text-white transition-colors"
             >
               <BiSolidContact size="20" />
               Contáctame
@@ -99,8 +99,9 @@ export default function Home() {
         <Badge className="mx-5 mb-4 bg-[#C5E898] py-1 px-5 text-green-700  hover:bg-[#C5E898] sm:mx-0">
           Tecnologías que uso frecuentemente
         </Badge>
-
+        
         <Skills />
+
       </div>
     </>
   );

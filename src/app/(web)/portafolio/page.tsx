@@ -8,7 +8,7 @@ import Breadcrumb from "@/components/comun/Breadcrumb";
 
 export default function Portafolio() {
     return (
-        <div className=" py-6 lg:pb-10">
+        <div className="lg:pb-10">
             <div className="px-4 sm:px-0 duration-700 animate-in slide-in-from-top-full">
                 <Breadcrumb
                     pageName="Portafolio"
@@ -16,7 +16,7 @@ export default function Portafolio() {
                     description="Estos son los ultimos proyectos que he realizado."
                 />
             </div>
-            <section className="mb-12 grid grid-cols-1 gap-5 duration-700 animate-in slide-in-from-left-full md:grid-cols-2 xl:grid-cols-3">
+            <section className="mb-12 grid grid-cols-1 gap-5 duration-700 animate-in slide-in-from-left-full md:grid-cols-2 xl:grid-cols-3 px-5 sm:px-0">
                 {shuffle(projects).map(
                     ({ projectUrl: { github, live }, logo, name, tagline }, i) => (
                         <div

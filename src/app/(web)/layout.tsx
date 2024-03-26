@@ -10,7 +10,7 @@ export default function WebLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="bg-[url('/noise.png')]">
+    <main >
       <div className="relative flex min-h-screen flex-col overflow-hidden dark:bg-transparent">
         <SiteHeader />
         <div className="container pt-16 overflow-auto sm:px-10 px-0">

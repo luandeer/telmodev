@@ -15,8 +15,8 @@ export function MainNav({ items }: MainNavProps) {
             <Link href="/" className="flex items-center space-x-2">
                 <Image src="/vercel.svg" className="hidden object-cover" alt="logo" width={90} height={90} priority />
                 <div className="flex">
-                <span className="text-xl text-gray-700 font-extrabold">{siteConfig.nameLogo}</span>
-                <span className="text-gray-700 text-xl font-extrabold">dev</span>
+                <span className="text-xl bg-gradient-to-r from-purple-500 to-purple-900 bg-clip-text text-transparent font-extrabold">{siteConfig.nameLogo}</span>
+                <span className="text-gray-700 text-xl font-extrabold hidden">dev</span>
                 </div>
 
             </Link>
