@@ -1,6 +1,6 @@
 export type SiteConfig = typeof siteConfig
 import { TbHomeDown} from "react-icons/tb";
-import { FaGithub,FaLinkedin,FaYoutube,FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaGithub,FaLinkedin,FaYoutube,FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa";
 
 export const siteConfig = {
   nameLogo: "TELMO",
@@ -58,6 +58,11 @@ export const siteConfig = {
       title: "Instagram",
       href: "https://www.instagram.com/tel_alexander/",
       icon: FaInstagram ,
+    },
+    facebook: {
+      title: "Facebook",
+      href: "https://www.facebook.com/telmoalexander.perezreginaldo",
+      icon: FaFacebook ,
     },
     whatsapp: {
       title: "Whatsapp",

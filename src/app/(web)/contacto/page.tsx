@@ -3,16 +3,17 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaGithub,FaLinkedin,FaYoutube,FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa";
 import Breadcrumb from "@/components/comun/Breadcrumb";
+import { siteConfig } from "@/config/site-web";
 
-export default function NamePage() {
+export default function Contacto() {
   return (
     <div className="container grid w-full gap-2 px-5 pb-12 sm:px-0">
       <div className=" duration-700 animate-in slide-in-from-top-full sm:px-0">
         <Breadcrumb
           pageName="Contacto"
-          pathActual="https://res.cloudinary.com/dsf39ftzm/image/upload/v1711330351/portafolio/axbrs2nixcaa1b5kyyrf.png"
+          pathActual="https://res.cloudinary.com/dsf39ftzm/image/upload/v1711476727/portafolio/bi4soea85b1a0kanxnyy.png"
           description="Encuentrame por estos medios."
         />
       </div>
@@ -27,25 +28,59 @@ export default function NamePage() {
         <div className="grid grid-cols-3 gap-4">
           <a
             className="group flex flex-col gap-2 items-center rounded-lg border p-4 hover:bg-gray-100 dark:hover:bg-gray-800"
-            href="#"
+            href={siteConfig.links.facebook.href}
+            target="_blank"
           >
             <FaFacebook className="h-6 w-6" />
             <span className="text-sm font-medium">Facebook</span>
           </a>
           <a
             className="group flex flex-col gap-2 items-center rounded-lg border p-4 hover:bg-gray-100 dark:hover:bg-gray-800"
-            href="#"
+            href={siteConfig.links.linkedin.href}
+            target="_blank"
+
           >
             <FaLinkedin className="h-6 w-6" />
             <span className="text-sm font-medium">Linkedin</span>
           </a>
           <a
             className="group flex flex-col gap-2 items-center rounded-lg border p-4 hover:bg-gray-100 dark:hover:bg-gray-800"
-            href="#"
+            href={siteConfig.links.github.href}
+            target="_blank"
+
           >
             <FaGithub className="h-6 w-6" />
             <span className="text-sm font-medium">GitHub</span>
           </a>
+          <a
+            className="group flex flex-col gap-2 items-center rounded-lg border p-4 hover:bg-gray-100 dark:hover:bg-gray-800"
+            href={siteConfig.links.youtube.href}
+            target="_blank"
+
+          >
+            <FaYoutube className="h-6 w-6" />
+            <span className="text-sm font-medium">Youtube</span>
+          </a>
+          <a
+            className="group flex flex-col gap-2 items-center rounded-lg border p-4 hover:bg-gray-100 dark:hover:bg-gray-800"
+            href={siteConfig.links.instagram.href}
+            target="_blank"
+
+          >
+            <FaInstagram className="h-6 w-6" />
+            <span className="text-sm font-medium">Instagram</span>
+          </a>
+
+          <a
+            className="group flex flex-col gap-2 items-center rounded-lg border p-4 hover:bg-gray-100 dark:hover:bg-gray-800"
+            href={siteConfig.links.whatsapp.href}
+            target="_blank"
+
+          >
+            <FaWhatsapp className="h-6 w-6" />
+            <span className="text-sm font-medium">Whatsapp</span>
+          </a>
+
         </div>
       </div>
       <div className="space-y-4 pt-5">
@@ -57,23 +92,30 @@ export default function NamePage() {
           </p>
         </div>
         <div className="space-y-2">
-          <dl className="grid grid-cols-2 gap-2 text-sm">
+          <dl className="flex items-center flex-wrap gap-5 text-sm">
             <div>
-              <dt className="font-medium">Email</dt>
+              <dt className="font-medium">Email 1</dt>
               <dd>
-                <Link className="underline underline-offset-2" href="#">
-                  info@example.com
+                <Link className="underline underline-offset-2" href="mailto:alexanderperezreginaldo@gmail.com">
+                alexanderperezreginaldo@gmail.com
                 </Link>
               </dd>
             </div>
+
             <div>
-              <dt className="font-medium">Phone</dt>
-              <dd>1-234-567-8900</dd>
+            <dt className="font-medium">Email 2</dt>
+              <dd>
+                <Link className="underline underline-offset-2" href="mailto:alexander_pere@hotmail.com">
+                alexander_pere@hotmail.com
+                </Link>
+              </dd>
             </div>
-            <div className="col-span-2">
-              <dt className="font-medium">Address</dt>
-              <dd>1234 Example St, City, State, 56789, Country</dd>
+
+            <div>
+              <dt className="font-medium">Celular</dt>
+              <dd>+51 967 502 750</dd>
             </div>
+            
           </dl>
         </div>
       </div>

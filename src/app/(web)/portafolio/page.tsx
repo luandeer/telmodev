@@ -12,7 +12,7 @@ export default function Portafolio() {
             <div className="px-4 sm:px-0 duration-700 animate-in slide-in-from-top-full">
                 <Breadcrumb
                     pageName="Portafolio"
-                    pathActual="https://res.cloudinary.com/dsf39ftzm/image/upload/v1711330351/portafolio/axbrs2nixcaa1b5kyyrf.png"
+                    pathActual="https://res.cloudinary.com/dsf39ftzm/image/upload/v1711476842/portafolio/zhvonvodiorwgcmvrv5q.png"
                     description="Estos son los ultimos proyectos que he realizado."
                 />
             </div>

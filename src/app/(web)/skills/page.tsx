@@ -36,7 +36,7 @@ export default function Skills() {
       <div className="px-4 sm:px-0">
       <Breadcrumb
         pageName="Mis Skills"
-        pathActual="https://res.cloudinary.com/dsf39ftzm/image/upload/v1711330351/portafolio/axbrs2nixcaa1b5kyyrf.png"
+        pathActual="https://res.cloudinary.com/dsf39ftzm/image/upload/v1711477173/portafolio/ddx5hqnun605bnyb2sud.png"
         description="En términos generales, cuento con habilidades destacadas en el desarrollo web, con un enfoque particular en tecnologías como React.js, Next.js y Tailwind CSS para crear interfaces modernas y receptivas. Mi experiencia abarca tanto el desarrollo frontend con JavaScript y TypeScript, como el backend con Node.js y Express.js."
       />
       </div>
