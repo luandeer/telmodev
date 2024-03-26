@@ -71,7 +71,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative flex w-auto overflow-hidden duration-700 animate-in slide-in-from-left-full">
+        <div className="relative hidden  sm:flex w-auto overflow-hidden duration-700 animate-in slide-in-from-left-full">
           <Image
             alt="sonqu"
             className="aspect-[4/4] rounded-full bg-transparent object-cover object-center sm:w-full"

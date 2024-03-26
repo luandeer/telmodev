@@ -38,7 +38,7 @@ const SidebarMovil = () => {
 
                 </SheetHeader>
 
-                <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-4 duration-700 animate-in slide-in-from-bottom-full">
+                <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-4">
 
                     <SheetClose asChild>
                     <Link
@@ -91,7 +91,7 @@ const SidebarMovil = () => {
                 <Separator className="my-4" />
 
                 <SheetFooter>
-                    <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-4 duration-700 animate-in slide-in-from-bottom-full">
+                    <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-4">
                         {Object.values(siteConfig.links).map((item: any, i) => {
                             const { title, icon: Icon, href } = item;
                             // Comprueba si Icon está definido antes de usarlo
