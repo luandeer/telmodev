@@ -3,7 +3,7 @@ import Link from "next/link";
 import { siteConfig } from "@/config/site-web";
 import { MainNav } from "./main-nav";
 import { ThemeToggle } from "./theme-toggle";
-import { RiWhatsappFill } from "react-icons/ri";
+import { FaGithub, FaWhatsapp } from "react-icons/fa";
 import SidebarMovil from "./sidebar-movil";
 
 export function SiteHeader() {
@@ -18,17 +18,34 @@ export function SiteHeader() {
 
                         <span className="group relative">
                             <div className="absolute left-[50%] top-[calc(100%+0.5rem)] hidden w-auto -translate-x-[50%] group-hover:block">
-                                <div className="right-0 top-full whitespace-nowrap rounded bg-green-600 px-2 py-1 text-xs text-gray-100">
-                                    Chatea con soporte
+                                <div className="right-0 top-full whitespace-nowrap rounded bg-gray-800 px-2 py-1 text-xs text-gray-100">
+                                    chatea conmigo
                                 </div>
                             </div>
                             <Link
-                                href={siteConfig.links.github}
+                                href={siteConfig.links.whatsapp.href}
                                 target="_blank"
                                 rel="noreferrer"
                             >
                                 <div>
-                                    <RiWhatsappFill size={25} className="text-green-500" />
+                                    <FaWhatsapp size={27} className="text-gray-800" />
+                                    <span className="sr-only">Whatsapp</span>
+                                </div>
+                            </Link>
+                        </span>
+                        <span className="group relative">
+                            <div className="absolute left-[50%] top-[calc(100%+0.5rem)] hidden w-auto -translate-x-[50%] group-hover:block">
+                                <div className="right-0 top-full whitespace-nowrap rounded bg-gray-800 px-2 py-1 text-xs text-gray-100">
+                                    Github
+                                </div>
+                            </div>
+                            <Link
+                                href={siteConfig.links.github.href}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <div>
+                                    <FaGithub size={27} className="text-gray-800 dark:text-gray-50" />
                                     <span className="sr-only">GitHub</span>
                                 </div>
                             </Link>

@@ -4,19 +4,19 @@ import { siteConfig } from "@/config/site-web";
 
 import { PiHandWavingFill } from "react-icons/pi";
 import { BiSolidContact } from "react-icons/bi";
-import { TbFileDownload } from "react-icons/tb";
 import { GrProjects } from "react-icons/gr";
 import { Skills } from "@/components";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 import Image from "next/image";
+import { DescargarCv } from "@/components/ui-web/inicio/descargar-cv";
 
 export default function Home() {
   return (
     <>
       <div className="grid grid-cols-2 items-center justify-center gap-2 max-sm:flex max-sm:flex-col-reverse max-sm:items-center max-sm:gap-3">
-        <div className="flex flex-col items-start justify-start px-5 text-gray-700 xl:px-0">
+        <div className="flex flex-col items-start justify-start px-5 text-gray-700 xl:px-0 duration-700 animate-in slide-in-from-top-full">
           <div>
             <Badge className="mx-auto mb-5 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-gray-700 px-5 py-1 transition-colors">
               {" "}
@@ -45,7 +45,7 @@ export default function Home() {
               const IconComponent = Icon ?? (() => null);
               return (
                 <a
-                  key={i}
+                  key={title}
                   href={href}
                   rel="noreferer noopener"
                   target="_blank"
@@ -67,17 +67,11 @@ export default function Home() {
               Contáctame
             </Link>
 
-            <Link
-              href="/contacto"
-              className="flex max-w-fit items-center justify-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-3 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-            >
-              <TbFileDownload size="20" />
-              Descargar CV
-            </Link>
+            <DescargarCv/>
           </div>
         </div>
 
-        <div className="relative flex w-auto overflow-hidden">
+        <div className="relative flex w-auto overflow-hidden duration-700 animate-in slide-in-from-left-full">
           <Image
             alt="sonqu"
             className="aspect-[4/4] rounded-full bg-transparent object-cover object-center sm:w-full"

@@ -1,6 +1,6 @@
 export type SiteConfig = typeof siteConfig
 import { TbHomeDown} from "react-icons/tb";
-import { FaGithub,FaLinkedin,FaYoutube,FaInstagram } from "react-icons/fa";
+import { FaGithub,FaLinkedin,FaYoutube,FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export const siteConfig = {
   nameLogo: "TELMO",
@@ -38,26 +38,31 @@ export const siteConfig = {
   links: {
     github: {
       title: "Github",
-      href: "https://github.com/rajput-hemant",
+      href: "https://github.com/luandeer",
       icon: FaGithub,
     },
 
     linkedin: {
       title: "Linkedin",
-      href: "https://www.linkedin.com/in/rajput-hemant",
+      href: "https://www.linkedin.com/in/telmoalexander/",
       icon: FaLinkedin,
     },
 
-    twitter: {
+    youtube: {
       title: "Youtube",
-      href: "https://twitter.com/rajput_hemant01",
+      href: "https://www.youtube.com/@luandeer/videos",
       icon: FaYoutube,
     },
 
-    stackoverflow: {
+    instagram: {
       title: "Instagram",
-      href: "https://stackoverflow.com/users/20652038/rajput-hemant",
+      href: "https://www.instagram.com/tel_alexander/",
       icon: FaInstagram ,
+    },
+    whatsapp: {
+      title: "Whatsapp",
+      href: "https://api.whatsapp.com/send?phone=51967502750&text=Hola,%20telmo.%20Te%20escribo%20desde%20tu%20sitio%20web...",
+      icon: FaWhatsapp ,
     },
   },
 }

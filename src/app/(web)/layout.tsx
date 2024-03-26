@@ -20,7 +20,7 @@ export default function WebLayout({
         <ScrollToTop/>
         <Footer/>
       </div>
-      <Toaster richColors/>
+      <Toaster richColors closeButton/>
 
     </main>
   );

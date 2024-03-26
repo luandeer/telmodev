@@ -21,7 +21,7 @@ export function MainNav({ items }: MainNavProps) {
 
             </Link>
             {items?.length ? (
-                <nav className="hidden sm:flex items-center gap-3 text-muted-foreground">
+                <nav className="hidden md:flex items-center gap-3 text-muted-foreground">
                     {items?.map(
                         (item, index) =>
                             item.href && (

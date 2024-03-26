@@ -2,7 +2,7 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
     {
-        name: "Infinitunes",
+        name: "Sitio web Sonqu",
         slug: "infinitunes",
         logo: "https://raw.githubusercontent.com/rajput-hemant/infinitunes/master/public/images/logo1920.png",
         tagline:
@@ -11,12 +11,12 @@ export const projects: Project[] = [
             "🎵 A Simple Music Player Web App made with Next.js 13, TypeScript, TailwindCSS & Unofficial JioSaavn API",
         projectUrl: {
             github: "https://github.com/rajput-hemant/infinitunes",
-            live: "https://infinitunes.vercel.app/",
+            live: "https://www.sonquoficial.com/",
         },
     },
 
     {
-        name: "Calculator",
+        name: "Portafolio(V1)",
         slug: "calculator",
         logo: "https://raw.githubusercontent.com/rajput-hemant/calculator/master/assets/images/app_icon.png",
         tagline:
@@ -24,20 +24,21 @@ export const projects: Project[] = [
         description:
             "A Simple but elegant Calculator app made with Flutter using Google's Material Design with Currency (Exchange Rate) and Unit Converter. ",
         projectUrl: {
-            github: "https://github.com/rajput-hemant/calculator",
+            github: "https://github.com/luandeer/Portafolio_Web-con-React",
+            live: "https://luandeer.github.io/Portafolio_Web-con-React/",
         },
     },
 
     {
-        name: "JioSaavn API (Rust)",
+        name: "Pipati",
         slug: "jiosaavn-api-rs",
         logo: "https://raw.githubusercontent.com/rajput-hemant/jiosaavn-api-rs/master/public/jiosaavn-2.png",
-        tagline: "Unofficial JioSaavn API written in Rust programming language 🦀",
+        tagline: "PIPATI es un juego de piedra-papel-tijera con un enfoque de fútbol, este proyecto fue desarrollada con html-css-js.",
         description:
             "Unofficial JioSaavn API written in Rust programming language 🦀",
         projectUrl: {
-            github: "https://github.com//rajput-hemant/jiosaavn-api-rs",
-            live: "https://jiosaavn-api-rs.vercel.app/",
+            github: "https://github.com/luandeer/JuegoPiedraPapelTijera-html-css-js",
+            live: "https://luandeer.github.io/JuegoPiedraPapelTijera-html-css-js/src/index.html",
         },
     },
 

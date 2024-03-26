@@ -40,8 +40,8 @@ export function Skills() {
                     <CarouselItem key={nombre} className="pl-1 basis-1/2 md:basis-1/5 lg:basis-1/6">
                         <div className="w-full p-0">
                             <Card>
-                                <CardContent className="flex items-center justify-center py-2 gap-1 text-gray-500">
-                                <IconComponent size={25} />
+                                <CardContent className="flex items-center justify-center py-2 gap-2 text-gray-500 w-full min-w-min">
+                                <IconComponent size={25}/>
 
                                     <strong className="text-lg whitespace-nowrap">{nombre}</strong>
 
