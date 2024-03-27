@@ -18,12 +18,12 @@ export default function Home() {
     <>
       <div className="grid grid-cols-2 items-center justify-center gap-2 max-sm:flex max-sm:flex-col-reverse max-sm:items-center max-sm:gap-3 max-sm:my-20">
         <div className="flex flex-col items-start justify-start px-5 text-gray-700 xl:px-0 duration-700 animate-in slide-in-from-top-full">
-          <div className="hidden">
+          <div >
             <Badge className="mx-auto mb-5 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-gray-700 px-5 py-1 transition-colors">
               {" "}
               <GrProjects className="text-white" size={12} />
               <p className="font-semibold text-white">
-                20 proyectos desarrollados
+                 V1.0
               </p>
             </Badge>
           </div>
@@ -62,7 +62,7 @@ export default function Home() {
           <div className=" mt-6 flex items-center justify-start space-x-2 sm:space-x-3">
             <Link
               href="/contacto"
-              className="flex  items-center justify-center gap-1 rounded-lg border border-gray-200 bg-black px-6 py-3 text-sm text-white transition-colors"
+              className="flex  items-center justify-center gap-1 rounded-lg border border-gray-200 bg-black px-4 py-3 text-sm text-white transition-colors"
             >
               <BiSolidContact size="20" />
               Contáctame
@@ -102,25 +102,6 @@ export default function Home() {
         </Badge>
         
         <Skills />
-
-        <div className='sm:hidden flex items-center justify-center flex-col my-5 w-full px-5 sm:px-0'>
-            <div className='break-inside relative overflow-hidden flex flex-col justify-between space-y-2 text-sm rounded-xl p-4 mb-4 bg-green-600 text-white w-full'>
-                <span className='uppercase text-xs text-gray-200'>Comunicación rápida</span>
-                <div className='flex flex-row items-center space-x-3'>
-                    <FaWhatsapp  size={30}/>
-                    <span className='text-base font-medium'>Escríbeme al whatsapp</span>
-                </div>
-                <div className='flex justify-between items-center'>
-                    <span>Para cualquier consulta</span>
-                    <a className='flex items-center justify-center text-xs font-medium rounded-full px-4 py-2 space-x-1 bg-white text-black' href="https://api.whatsapp.com/send?phone=51967502750&text=Hola,%20telmo.%20Te%20escribo%20desde%20tu%20sitio%20web...">
-                        <span>Chatear</span>
-                        <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='#000000' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
-                            <path d='M5 12h13M12 5l7 7-7 7' />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
 
       </div>
     </>

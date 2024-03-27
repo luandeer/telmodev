@@ -29,7 +29,7 @@ const SidebarMovil = () => {
             </SheetTrigger>
             <SheetContent>
                 <SheetHeader>
-                    <SheetTitle className='text-start'>TELMOdev</SheetTitle>
+                    <SheetTitle className='text-start'>TelmoDev</SheetTitle>
                     <Separator className="my-4" />
 
                     <SheetDescription className='text-start'>

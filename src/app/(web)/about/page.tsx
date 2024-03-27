@@ -119,9 +119,10 @@ export default function About() {
         <Breadcrumb
           pageName="Acerca de mi"
           pathActual="/me.png"
-          description="Hola, mi nombre es Telmo Alexander Perez Reginaldo. Actualmente soy estudiante de décimo ciclo en Ingeniería de Software de la Universidad Nacional Mayor de San Marcos."
+          description="Hola, mi nombre es Telmo Alexander Perez Reginaldo."
         />
       </div>
+
       <div className="grid grid-cols-1 gap-6 px-4 sm:px-0 lg:grid-cols-3">
         <Card className="relative grid h-full w-full place-items-center overflow-hidden rounded-xl py-4 text-center sm:py-0">
           <div className="absolute inset-0 h-full w-full bg-red-900" />

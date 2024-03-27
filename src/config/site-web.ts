@@ -3,7 +3,7 @@ import { TbHomeDown} from "react-icons/tb";
 import { FaGithub,FaLinkedin,FaYoutube,FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa";
 
 export const siteConfig = {
-  nameLogo: "TELMO",
+  nameLogo: "TelmoDev",
   nameMetada: "Telmo",
   description:
     "Este es mi portafolio como desarrollador web",
