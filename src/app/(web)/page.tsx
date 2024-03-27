@@ -4,27 +4,25 @@ import { siteConfig } from "@/config/site-web";
 
 import { PiHandWavingFill } from "react-icons/pi";
 import { BiSolidContact } from "react-icons/bi";
-import { GrProjects } from "react-icons/gr";
+import { TbVersionsFilled } from "react-icons/tb";
 import { Skills } from "@/components";
 import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
 
 import Image from "next/image";
 import { DescargarCv } from "@/components/ui-web/inicio/descargar-cv";
-import {  FaWhatsapp } from "react-icons/fa";
 
 export default function Home() {
   return (
     <>
-      <div className="grid grid-cols-2 items-center justify-center gap-2 max-sm:flex max-sm:flex-col-reverse max-sm:items-center max-sm:gap-3 max-sm:my-20">
-        <div className="flex flex-col items-start justify-start px-5 text-gray-700 xl:px-0 duration-700 animate-in slide-in-from-top-full">
+      <div className="grid grid-cols-2 items-center justify-center gap-2 max-sm:flex max-sm:flex-col-reverse max-sm:items-center max-sm:gap-3 max-sm:mt-20 mb-6">
+        <div className="flex flex-col items-start justify-start px-5 text-gray-700 sm:px-0 duration-700 animate-in slide-in-from-top-full">
           <div >
             <Badge className="mx-auto mb-5 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-gray-700 px-5 py-1 transition-colors">
               {" "}
-              <GrProjects className="text-white" size={12} />
-              <p className="font-semibold text-white">
-                 V1.0
-              </p>
+              <TbVersionsFilled className="text-white" size={12} />
+              <span className="text-xs text-white">
+                V2.0
+              </span>
             </Badge>
           </div>
 
@@ -52,7 +50,7 @@ export default function Home() {
                   target="_blank"
                   className="flex items-center gap-2 border-b border-border"
                 >
-                  <IconComponent size={20} className="text-gray-500"/>
+                  <IconComponent size={20} className="text-gray-500" />
                   <span className="text-gray-500">{title}</span>
                 </a>
               );
@@ -68,7 +66,7 @@ export default function Home() {
               Contáctame
             </Link>
 
-            <DescargarCv/>
+            <DescargarCv />
           </div>
         </div>
 
@@ -94,13 +92,12 @@ export default function Home() {
         </div>
       </div>
 
-      <Separator className="my-4" />
 
       <div className="flex flex-col items-start justify-center">
         <Badge className="mx-5 mb-4 bg-[#C5E898] py-1 px-5 text-green-700  hover:bg-[#C5E898] sm:mx-0">
           Tecnologías que uso frecuentemente
         </Badge>
-        
+
         <Skills />
 
       </div>

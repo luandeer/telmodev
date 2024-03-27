@@ -4,13 +4,12 @@ export const projects: Project[] = [
     {
         name: "Sitio web Sonqu",
         slug: "infinitunes",
-        logo: "https://raw.githubusercontent.com/rajput-hemant/infinitunes/master/public/images/logo1920.png",
+        logo: "https://res.cloudinary.com/dsf39ftzm/image/upload/v1711512975/portafolio/proyectos/w9zbribznmexbncd9lqf.jpg",
         tagline:
-            "Music Player Web App made with Next.js 13, TypeScript, TailwindCSS",
+            "Next.js 14 | TypeScript | TailwindCSS | Postgres Sql | Next Auth | Shadcn UI",
         description:
-            "🎵 A Simple Music Player Web App made with Next.js 13, TypeScript, TailwindCSS & Unofficial JioSaavn API",
+            "Este es una aplicacion web full stack con autenticacion y usuario de roles.",
         projectUrl: {
-            github: "https://github.com/rajput-hemant/infinitunes",
             live: "https://www.sonquoficial.com/",
         },
     },
@@ -18,11 +17,11 @@ export const projects: Project[] = [
     {
         name: "Portafolio(V1)",
         slug: "calculator",
-        logo: "https://raw.githubusercontent.com/rajput-hemant/calculator/master/assets/images/app_icon.png",
+        logo: "https://res.cloudinary.com/dsf39ftzm/image/upload/v1711513674/portafolio/proyectos/igcl5js0y8jhnyh5vsls.jpg",
         tagline:
-            "Calculator app with Currency (Exchange Rate) and Unit Converter made with Flutter.",
+            "React 18| Javascript | SCSS | Vite js",
         description:
-            "A Simple but elegant Calculator app made with Flutter using Google's Material Design with Currency (Exchange Rate) and Unit Converter. ",
+            "Este portafolio esta desarrollado con una guia básica de react de un tutorial de youtube, en donde se ve a detalle como funcionan los componentes en react.",
         projectUrl: {
             github: "https://github.com/luandeer/Portafolio_Web-con-React",
             live: "https://luandeer.github.io/Portafolio_Web-con-React/",
@@ -32,10 +31,10 @@ export const projects: Project[] = [
     {
         name: "Pipati",
         slug: "jiosaavn-api-rs",
-        logo: "https://raw.githubusercontent.com/rajput-hemant/jiosaavn-api-rs/master/public/jiosaavn-2.png",
-        tagline: "PIPATI es un juego de piedra-papel-tijera con un enfoque de fútbol, este proyecto fue desarrollada con html-css-js.",
+        logo: "https://res.cloudinary.com/dsf39ftzm/image/upload/v1711513801/portafolio/proyectos/al232vv2sgwylwooepmf.jpg",
+        tagline: "Html | Css | Javascript",
         description:
-            "Unofficial JioSaavn API written in Rust programming language 🦀",
+            "PIPATI es un juego de piedra-papel-tijera con un enfoque de fútbol, este proyecto fue desarrollado con html, css y js puro",
         projectUrl: {
             github: "https://github.com/luandeer/JuegoPiedraPapelTijera-html-css-js",
             live: "https://luandeer.github.io/JuegoPiedraPapelTijera-html-css-js/src/index.html",
@@ -43,83 +42,83 @@ export const projects: Project[] = [
     },
 
     {
-        name: "Three.js Journey",
+        name: "Landing Personal",
         slug: "threejs-journey",
-        logo: "https://raw.githubusercontent.com/rajput-hemant/threejs-journey/master/assets/images/threejs.png",
+        logo: "https://res.cloudinary.com/dsf39ftzm/image/upload/v1711513871/portafolio/proyectos/kml9dmt3n6vnc8t4jc5p.jpg",
         tagline:
-            "Practice projects w/ source-code for Three.js course by Bruno Simon",
+            "Html | Css | Javascript",
         description:
-            "Practice projects w/ source-code for Three.js course by Bruno Simon",
+            "Este Proyecto es una landing básica en donde consumimos una api rest para listar los ultimos videos de tu canal de youtube.",
         projectUrl: {
-            github: "https://github.com/rajput-hemant/threejs-journey",
-            live: "https://threejs-journey-master.vercel.app/",
+            github: "https://github.com/luandeer/proyecto-landing",
+            live: "https://luandeer.github.io/proyecto-landing/src/index.html",
         },
     },
 
     {
-        name: "leetcode",
+        name: "Plantilla - Next js",
         slug: "leetcode",
-        logo: "https://graph.org/file/1a2b953e82e915ad29f68.png",
+        logo: "https://res.cloudinary.com/dsf39ftzm/image/upload/v1711517378/portafolio/proyectos/tpcqzdsqu1lx3nhvvacg.png",
         tagline:
-            "Curated solutions to Leetcode problems in multiple languages to ace the Coding Interviews.",
+            "Next.js 14 | TypeScript | TailwindCSS | | Shadcn UI",
         description:
-            "Curated solutions to Leetcode problems in multiple languages to ace the Coding Interviews.",
+            "Este es una plantilla que uso para iniciar con algun proyecto nuevo que tenga.",
         projectUrl: {
-            github: "https://github.code/rajput-hemant/leetcode",
-            live: "https://rajput-hemant.github.io/leetcode/",
+            github: "https://github.com/luandeer/template-proyecto-next",
         },
     },
 
     {
-        name: "Next.js Template",
+        name: "Portafolio(v2)",
         slug: "nextjs-template",
-        logo: "https://raw.githubusercontent.com/rajput-hemant/nextjs-template/master/public/nextjs-light.svg",
+        logo: "https://res.cloudinary.com/dsf39ftzm/image/upload/v1711515320/portafolio/proyectos/oou36binuri37rajf23a.jpg",
         tagline:
-            "A Minimal Next.js Starter Template with TypeScript, Tailwind CSS, and pre-configured with ESLint, Prettier, and Husky.",
+            "Next.js 14 | TypeScript | TailwindCSS | Shadcn UI",
         description:
-            "A Minimal Next.js Starter Template with TypeScript, Tailwind CSS, and pre-configured with ESLint, Prettier, and Husky.",
+            "Este es mi portafolio actualizado con las habilidades o conocimiento que llegado adquirir hasta el momento.",
         projectUrl: {
-            github: "https://github.com/rajput-hemant/nextjs-template",
-            live: "https://nextjs-template-zero.vercel.app/",
+            github: "https://github.com/luandeer/telmodev",
+            live: "https://telmodev.vercel.app/",
         },
     },
 
     {
-        name: "React Template Vite",
+        name: "Carta Virtual - Maru's",
         slug: "react-template-vite",
-        logo: "https://raw.githubusercontent.com/rajput-hemant/react-template-vite/master/public/react.svg",
+        logo: "https://res.cloudinary.com/dsf39ftzm/image/upload/v1711515467/portafolio/proyectos/x7jsj6gvmlzk8fbsnyu1.jpg",
         tagline:
-            "A Minimal ⚛️ React Starter Template with Vite, TailwindCSS, and Typescript pre-configured with ESLint, Prettier and Husky.",
+            "Next 13| Javascript | SCSS |",
         description:
-            "A Minimal ⚛️ React Starter Template with Vite, TailwindCSS, and Typescript pre-configured with ESLint, Prettier and Husky.",
+            "Esta es una web de catálogo de productos que desarrolle para una polleria, esta integrado con whatsapp y consumimos la api de google sheet donde la usamos como base de datos para almacenar los productos.",
         projectUrl: {
-            github: "https://github.com/rajput-hemant/react-template-vite",
-            live: "https://react-template-vite-zero.vercel.app/",
+            github: "https://github.com/luandeer/marus-delivery",
+            live: "https://marus-delivery.vercel.app/",
         },
     },
 
     {
-        name: "Advent of Code (Rust)",
+        name: "Tienda virtual",
         slug: "advent-of-code",
-        logo: "https://raw.githubusercontent.com/rajput-hemant/advent-of-code/master/assets/advent-of-code.png",
-        tagline: "🎄 Advent of Code solutions in Rust programming language 🦀",
-        description: "🎄 Advent of Code solutions in Rust programming language 🦀",
+        logo: "https://res.cloudinary.com/dsf39ftzm/image/upload/v1711515780/portafolio/proyectos/h1zq4gshlq3dg72nwy4p.jpg",
+        tagline: "Next.js 14 | TypeScript | TailwindCSS | Next UI",
+        description: "Esta tienda virtual que desarrolle para productos importados, esta integrado con whatsapp y consumimos la api de google sheet donde la usamos como base de datos para almacenar los productos, implementamos rutas dinámicas y carruseles.",
         projectUrl: {
-            github: "https://github.com/rajput-hemant/advent-of-code",
+            github: "https://github.com/luandeer/tienda-adasa",
+            live: "https://vanidades-estilos-23qc2u88u-talexanderp.vercel.app/tienda",
         },
     },
 
     {
-        name: "Hashira",
+        name: "Proyecto HTML",
         slug: "hashira",
-        logo: "https://raw.githubusercontent.com/rajput-hemant/nextjs-template/master/public/nextjs-light.svg",
+        logo: "https://res.cloudinary.com/dsf39ftzm/image/upload/v1711516640/portafolio/proyectos/euewsn34bzf11xtiiuww.jpg",
         tagline:
-            "Ad-free Anime & Manga Streaming web app with a vast library of movies and TV shows, allowing users to easily search and create watchlists.",
+            "Html | Css | Javascript",
         description:
-            "Ad-free Anime & Manga Streaming web app with a vast library of movies and TV shows, allowing users to easily search and create watchlists.",
+            "En este proyecto prácticamos en implementar vistas en html de un ecommerce.",
         projectUrl: {
-            github: "https://github.com/rajput-hemant/hashira",
-            live: "https://hashira.vercel.app/",
+            github: "https://github.com/luandeer/curso-frontend-developer-javascript-practico",
+            live: "https://luandeer.github.io/curso-frontend-developer-javascript-practico/",
         },
     },
 ];

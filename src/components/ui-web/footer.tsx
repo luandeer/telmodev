@@ -1,6 +1,6 @@
 export const Footer = () => {
     return (
-        <div className="mx-auto w-full sm:mt-10">
+        <div className="mx-auto w-full mt-20">
             <footer className="py-3">
                 {/**
            * <div className="sm:flex sm:items-center sm:justify-between">
@@ -27,7 +27,7 @@ export const Footer = () => {
           </div>
           
            */}
-                <hr className="border-t-1 mx-auto my-3 border-gray-200" />
+                <hr className="border-t-1 mx-auto mb-3 border-gray-200" />
                 <span className="block text-center text-sm text-muted-foreground dark:text-gray-400">
                     © 2024{" "}
                     <a

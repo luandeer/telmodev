@@ -4,7 +4,7 @@ export type Project = {
     tagline: string;
     logo: string;
     projectUrl: {
-      github: string;
+      github?: string;
       live?: string;
     };
     coverImage?: {
