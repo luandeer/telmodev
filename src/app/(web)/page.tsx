@@ -10,11 +10,13 @@ import { Badge } from "@/components/ui/badge";
 
 import Image from "next/image";
 import { DescargarCv } from "@/components/ui-web/inicio/descargar-cv";
+import { HiArrowNarrowRight } from "react-icons/hi";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
-    <>
-      <div className="grid grid-cols-2 items-center justify-center gap-2 max-sm:flex max-sm:flex-col-reverse max-sm:items-center max-sm:gap-3 max-sm:mt-20 mb-6">
+    <div className="flex flex-col gap-2 w-full">
+      <div className="grid grid-cols-2 items-center justify-center gap-2 max-sm:flex max-sm:flex-col-reverse max-sm:items-center max-sm:gap-3 mt-8 sm:mt-0">
         <div className="flex flex-col items-start justify-start px-5 text-gray-700 sm:px-0 duration-700 animate-in slide-in-from-top-full">
           <div >
             <Badge className="mx-auto mb-5 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-gray-700 px-5 py-1 transition-colors">
@@ -37,7 +39,7 @@ export default function Home() {
             Jr Frontend Developer | Software Engineer Student at UNMSM.
           </p>
 
-          <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-4 duration-700 animate-in slide-in-from-bottom-full">
+          <div className="hidden mt-3 flex-wrap items-center gap-x-5 gap-y-4 duration-700 animate-in slide-in-from-bottom-full">
             {Object.values(siteConfig.links).map((item: any, i) => {
               const { title, icon: Icon, href } = item;
               // Comprueba si Icon está definido antes de usarlo
@@ -92,15 +94,65 @@ export default function Home() {
         </div>
       </div>
 
+      <span className="flex items-center mt-10 mx-5 sm:mx-0">
+        <Badge className="bg-[#C5E898] py-1 px-5 text-green-700  hover:bg-[#C5E898] sm:mx-0 whitespace-nowrap">
+          Tecnologías que uso frecuentemente
+        </Badge>        
+        <Separator className="my-4 shrink" />
+
+      </span>
 
       <div className="flex flex-col items-start justify-center">
-        <Badge className="mx-5 mb-4 bg-[#C5E898] py-1 px-5 text-green-700  hover:bg-[#C5E898] sm:mx-0">
-          Tecnologías que uso frecuentemente
-        </Badge>
-
         <Skills />
-
       </div>
-    </>
+
+      <span className="flex items-center mt-2 mx-5 sm:mx-0 sm:hidden">
+        <Badge className="bg-[#f5d273] py-1 px-5 text-yellow-600  hover:bg-[#C5E898] sm:mx-0 whitespace-nowrap">
+          Además
+        </Badge>        
+        <Separator className="my-4 shrink" />
+
+      </span>
+
+      <div className="flex sm:hidden items-center justify-between px-4 py-2 rounded-lg bg-red-700 mx-5 sm:mx-0">
+        <strong className="text-sm text-gray-50 sm:text-base font-normal"> Mi trabajos realizados! </strong>
+
+        <Link
+          className="flex items-center gap-2 bg-gray-800 text-white px-2 py-1 rounded-md"
+          href="/about"
+        >
+          <span className="text-sm font-medium hidden"> Ver </span>
+
+          <HiArrowNarrowRight size={20} />
+        </Link>
+      </div>
+
+      <div className="flex sm:hidden items-center justify-between px-4 py-2 rounded-lg bg-green-700 mx-5 sm:mx-0">
+        <strong className="text-sm text-gray-50 sm:text-base font-normal"> Mis habilidades! </strong>
+
+        <Link
+          className="flex items-center gap-2 bg-gray-800 text-white px-2 py-1 rounded-md"
+          href="/skills"
+        >
+          <span className="text-sm font-medium hidden"> Ver </span>
+
+          <HiArrowNarrowRight size={20} />
+        </Link>
+      </div>
+
+      <div className="flex sm:hidden items-center justify-between px-4 py-2 rounded-lg bg-blue-900 mx-5 sm:mx-0">
+        <strong className="text-sm text-gray-50 sm:text-base font-normal"> Sobre mi! </strong>
+
+        <Link
+          className="flex items-center gap-2 bg-gray-800 text-white px-2 py-1 rounded-md"
+          href="/about"
+        >
+          <span className="text-sm font-medium hidden"> Ver </span>
+
+          <HiArrowNarrowRight size={20} />
+        </Link>
+      </div>
+
+    </div>
   );
 }
