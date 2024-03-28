@@ -3,16 +3,19 @@ import Link from "next/link";
 import { siteConfig } from "@/config/site-web";
 
 import { PiHandWavingFill } from "react-icons/pi";
-import { BiSolidContact } from "react-icons/bi";
 import { TbVersionsFilled } from "react-icons/tb";
 import { Skills } from "@/components";
 import { Badge } from "@/components/ui/badge";
 
 import Image from "next/image";
 import { DescargarCv } from "@/components/ui-web/inicio/descargar-cv";
-import { HiArrowNarrowRight } from "react-icons/hi";
 import { Separator } from "@/components/ui/separator";
-
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 export default function Home() {
   return (
     <div className="flex flex-col gap-2 w-full">
@@ -62,10 +65,9 @@ export default function Home() {
           <div className=" mt-6 flex items-center justify-start space-x-2 sm:space-x-3">
             <Link
               href="/contacto"
-              className="flex  items-center justify-center gap-1 rounded-lg border border-gray-200 bg-black px-4 py-3 text-sm text-white transition-colors"
+              className="flex  items-center justify-center shadow-lg gap-1 rounded-lg border border-gray-200 bg-gray-700 px-4 py-3 text-sm text-white transition-colors"
             >
-              <BiSolidContact size="20" />
-              Contáctame
+              Hablemos
             </Link>
 
             <DescargarCv />
@@ -97,7 +99,7 @@ export default function Home() {
       <span className="flex items-center mt-10 mx-5 sm:mx-0">
         <Badge className="bg-[#C5E898] py-1 px-5 text-green-700  hover:bg-[#C5E898] sm:mx-0 whitespace-nowrap">
           Tecnologías que uso frecuentemente
-        </Badge>        
+        </Badge>
         <Separator className="my-4 shrink" />
 
       </span>
@@ -107,51 +109,29 @@ export default function Home() {
       </div>
 
       <span className="flex items-center mt-2 mx-5 sm:mx-0 sm:hidden">
-        <Badge className="bg-[#f5d273] py-1 px-5 text-yellow-600  hover:bg-[#C5E898] sm:mx-0 whitespace-nowrap">
-          Además
-        </Badge>        
+        <Badge className="bg-blue-300 py-1 px-5 text-blue-800  hover:bg-blue-300 sm:mx-0 whitespace-nowrap">
+          Curiosidades
+        </Badge>
         <Separator className="my-4 shrink" />
 
       </span>
 
-      <div className="flex sm:hidden items-center justify-between px-4 py-2 rounded-lg bg-red-700 mx-5 sm:mx-0">
-        <strong className="text-sm text-gray-50 sm:text-base font-normal"> Mi trabajos realizados! </strong>
+      <Accordion type="single" collapsible className=" mx-5 sm:mx-0 sm:hidden">
+        <AccordionItem value="item-1">
+          <AccordionTrigger className=" hover:no-underline text-start text-sm">¿Cuánto tiempo me llevó hacer este portafolio?
+          </AccordionTrigger>
+          <AccordionContent>
+            Exactamente 3 dias.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-2">
+          <AccordionTrigger className=" hover:no-underline text-start text-sm">¿Cuál es tu proyecto favorito y por qué?</AccordionTrigger>
+          <AccordionContent>
+            Sonqu, lo encuentras en la pestaña de Portafolio. Porque es el primer proyecto real que realicé para un cliente en donde hubo muchos desafíos para mi crecimiento como desarrollador frontend.
+          </AccordionContent>
+        </AccordionItem>
 
-        <Link
-          className="flex items-center gap-2 bg-gray-800 text-white px-2 py-1 rounded-md"
-          href="/about"
-        >
-          <span className="text-sm font-medium hidden"> Ver </span>
-
-          <HiArrowNarrowRight size={20} />
-        </Link>
-      </div>
-
-      <div className="flex sm:hidden items-center justify-between px-4 py-2 rounded-lg bg-green-700 mx-5 sm:mx-0">
-        <strong className="text-sm text-gray-50 sm:text-base font-normal"> Mis habilidades! </strong>
-
-        <Link
-          className="flex items-center gap-2 bg-gray-800 text-white px-2 py-1 rounded-md"
-          href="/skills"
-        >
-          <span className="text-sm font-medium hidden"> Ver </span>
-
-          <HiArrowNarrowRight size={20} />
-        </Link>
-      </div>
-
-      <div className="flex sm:hidden items-center justify-between px-4 py-2 rounded-lg bg-blue-900 mx-5 sm:mx-0">
-        <strong className="text-sm text-gray-50 sm:text-base font-normal"> Sobre mi! </strong>
-
-        <Link
-          className="flex items-center gap-2 bg-gray-800 text-white px-2 py-1 rounded-md"
-          href="/about"
-        >
-          <span className="text-sm font-medium hidden"> Ver </span>
-
-          <HiArrowNarrowRight size={20} />
-        </Link>
-      </div>
+      </Accordion>
 
     </div>
   );

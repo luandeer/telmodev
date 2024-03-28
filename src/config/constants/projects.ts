@@ -2,7 +2,7 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
     {
-        name: "Sitio web Sonqu",
+        name: "Sonqu",
         slug: "infinitunes",
         logo: "https://res.cloudinary.com/dsf39ftzm/image/upload/v1711512975/portafolio/proyectos/w9zbribznmexbncd9lqf.jpg",
         tagline:

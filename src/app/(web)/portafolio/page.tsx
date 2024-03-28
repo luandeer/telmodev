@@ -18,7 +18,7 @@ import {
 import { Button } from "@/components/ui/button"
 export default function Portafolio() {
     return (
-        <div className="lg:pb-10">
+        <div className="lg:pb-28">
             <div className="px-4 sm:px-0 duration-700 animate-in slide-in-from-top-full">
                 <Breadcrumb
                     pageName="Portafolio"
@@ -38,7 +38,7 @@ export default function Portafolio() {
                                 width={60}
                                 height={60}
                                 alt={name}
-                                className="h-24 w-24 rounded-md bg-foreground/5 object-contain p-2 duration-300 group-hover:bg-foreground/10"
+                                className="h-24 w-24 rounded-md bg-foreground/5 object-contain p-2 duration-300"
                             />
 
                             <div>

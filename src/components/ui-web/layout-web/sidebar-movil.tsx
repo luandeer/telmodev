@@ -25,7 +25,7 @@ const SidebarMovil = () => {
     return (
         <Sheet>
             <SheetTrigger asChild>
-                <Button className="px-2 py-0 h-8 rounded-lg transition-all bg-gray-800 hover:bg-gray-800 text-white text-sm flex md:hidden">Menú</Button>
+                <Button className="px-2 py-0 h-8 rounded-md transition-all bg-gray-800 hover:bg-gray-800 text-white text-sm flex md:hidden">Menú</Button>
             </SheetTrigger>
             <SheetContent>
                 <SheetHeader>
