@@ -76,7 +76,7 @@ export default function Home() {
           <Image
             alt="sonqu"
             className="aspect-[4/4] rounded-full bg-transparent object-cover object-center sm:w-full"
-            src="https://res.cloudinary.com/dsf39ftzm/image/upload/v1711330351/portafolio/axbrs2nixcaa1b5kyyrf.png"
+            src="/yoHome.png"
             width={400}
             height={300}
             priority
